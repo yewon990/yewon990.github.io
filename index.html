@@ -226,8 +226,18 @@
       line-height: 1.6;
       padding-top: 2px;
     }
-
-    .exp-body { display: flex; flex-direction: column; gap: 2px; }
+    
+    .exp-body { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 2px; 
+    }
+    
+    .exp-title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
 
     .exp-title {
       font-size: .92rem;
@@ -697,8 +707,10 @@
       <div class="exp-item">
         <div class="exp-date">2024.08 – 2024.12</div>
         <div class="exp-body">
-          <div class="exp-title">Researcher</div>
-          <div class="exp-org">AMILab, POSTECH (Advisor: Tae-Hyun Oh)</div>
+          <div class="exp-title-row">
+            <div class="exp-title">Researcher</div>
+            <div class="exp-org">AMILab, POSTECH (Advisor: Tae-Hyun Oh)</div>
+          </div>
           <ul class="exp-bullets">
             <li>Sound-guided image editing</li>
             <li>Sound source localization</li>
