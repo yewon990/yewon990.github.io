@@ -211,41 +211,34 @@
     }
 
     /* ── EXPERIENCE ── */
-    .exp-list { display: flex; flex-direction: column; gap: 28px; }
+    .exp-list { display: flex; flex-direction: column; gap: 20px; }
 
     .exp-item {
       display: grid;
-      grid-template-columns: 140px 1fr;
+      grid-template-columns: 130px 1fr;
       gap: 0 20px;
-    }    
-
-    .exp-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 6px;
     }
 
-    .exp-title-org { display: flex; flex-direction: column; gap: 1px; }
+    .exp-date {
+      font-family: var(--sans);
+      font-size: .72rem;
+      color: var(--ink-muted);
+      line-height: 1.6;
+      padding-top: 2px;
+    }
+
+    .exp-body { display: flex; flex-direction: column; gap: 2px; }
 
     .exp-title {
       font-size: .92rem;
       font-weight: 600;
       color: var(--ink);
+      line-height: 1.4;
     }
 
     .exp-org {
       font-size: .82rem;
       color: var(--accent);
-    }
-
-    .exp-date {
-      font-family: var(--sans);
-      font-size: .7rem;
-      color: var(--ink-muted);
-      white-space: nowrap;
     }
 
     .exp-bullets {
@@ -254,6 +247,7 @@
       display: flex;
       flex-direction: column;
       gap: 2px;
+      margin-top: 6px;
     }
 
     .exp-bullets li {
@@ -700,43 +694,37 @@
     </div>
     <div class="exp-list">
       <div class="exp-item">
-        <div class="exp-top">
-          <div class="exp-title-org">
-            <div class="exp-title">Researcher</div>
-            <div class="exp-org">AMILab, POSTECH</div>
-          </div>
-          <div class="exp-date">2024.08 – 2024.12</div>
+        <div class="exp-date">2024.08 – 2024.12</div>
+        <div class="exp-body">
+          <div class="exp-title">Researcher</div>
+          <div class="exp-org">AMILab, POSTECH</div>
+          <ul class="exp-bullets">
+            <li>Sound-guided image editing</li>
+            <li>Sound source localization</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li>Sound-guided image editing</li>
-          <li>Sound source localization</li>
-        </ul>
       </div>
       <div class="exp-item">
-        <div class="exp-top">
-          <div class="exp-title-org">
-            <div class="exp-title">Researcher</div>
-            <div class="exp-org">DL-LAB, Handong University</div>
-          </div>
-          <div class="exp-date">2022.07 – 2024.07</div>
+        <div class="exp-date">2022.07 – 2024.07</div>
+        <div class="exp-body">
+          <div class="exp-title">Researcher</div>
+          <div class="exp-org">DL-LAB, Handong University</div>
+          <ul class="exp-bullets">
+            <li>Multi-emotion and multi-speaker speech &amp; singing voice synthesis (TTS / SVS)</li>
+            <li>Medical image processing — spine segmentation, MRI raw data reconstruction</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li>Multi-emotion and multi-speaker speech &amp; singing voice synthesis (TTS / SVS)</li>
-          <li>Medical image processing — spine segmentation, MRI raw data reconstruction</li>
-        </ul>
       </div>
       <div class="exp-item">
-        <div class="exp-top">
-          <div class="exp-title-org">
-            <div class="exp-title">Research Assistant</div>
-            <div class="exp-org">HAIL, Handong University</div>
-          </div>
-          <div class="exp-date">2020.12 – 2022.06</div>
+        <div class="exp-date">2020.12 – 2022.06</div>
+        <div class="exp-body">
+          <div class="exp-title">Research Assistant</div>
+          <div class="exp-org">HAIL, Handong University</div>
+          <ul class="exp-bullets">
+            <li>Dehydrogenation enthalpy prediction using Graph Convolutional Network</li>
+            <li>Video anomaly detection</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li>Dehydrogenation enthalpy prediction using Graph Convolutional Network</li>
-          <li>Video anomaly detection</li>
-        </ul>
       </div>
     </div>
   </section>
